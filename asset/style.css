@@ -1,0 +1,13 @@
+/* Custom properties/Variable */
+
+:root {
+background-color: #f3f6fa;
+font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(44, 42, 42);
+}
