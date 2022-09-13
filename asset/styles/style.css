@@ -23,7 +23,7 @@ h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #56ebe4;
+    color: #7171C6;
     margin-bottom: 5rem;
 }
 
@@ -89,17 +89,17 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56ebe4;
+    border: 0.1rem solid #7171C6;
     border-radius: 10px;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56ebe4;
+    color: #7171C6;
     background-color: #f3f6fa;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 235, 228, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(113, 113, 198, 0.5);
     transform: translateY(-0.5rem);
     transition: transform 170ms;
 }
