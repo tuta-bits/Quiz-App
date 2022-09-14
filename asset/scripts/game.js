@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 /* Getting References */
 
 const question = document.getElementById('question');
@@ -7,11 +7,12 @@ const choices = Array.from(document.getElementsByClassName('option-text'));
 /* Setting variables */
 
 let currentQuestion = {};
-let obtainingAnswers = true;
+let obtainingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+// ARRAYS OF QUESTIONS
 let questions = [
     {
         question: 'Inside which HTML element do we put JavaScript ?',
@@ -38,3 +39,67 @@ let questions = [
         answer: 4
     }
 ];
+
+
+// CONSTANTS
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 3;
+
+// START GAME FUNCTION
+startGame = () => {
+    questionCounter = 0
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+};
+
+// NEW QUESTION FUNCTION
+getNewQuestion = () => {
+if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    
+    //GO TO END PAGE
+    return window.location.assign('/end.html');
+}
+
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+    //ITERATE OVER THE CHOICES  
+    choices.forEach(option => {
+        const number = option.dataset['number'];
+        option.innerText = currentQuestion['option' + number];
+    });
+
+    availableQuestions.splice(questionIndex, 1);
+
+    obtainingAnswers = true;
+};
+
+// SELECTING CHOICES
+choices.forEach(option => {
+    option.addEventListener('click', e => {
+        if(!obtainingAnswers) return;
+
+        obtainingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset['number'];
+
+        // APPLYING COLOR TO SELECTED OPTIONS
+        const classToApply = 
+        selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        selectedOption.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedOption.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 2000); 
+
+        
+    });
+});
+
+startGame();
