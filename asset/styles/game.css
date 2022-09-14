@@ -24,4 +24,13 @@
 
 .option-text {
     padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #5ce67c;
+}
+
+.incorrect {
+    background-color: #e03849;
 }
