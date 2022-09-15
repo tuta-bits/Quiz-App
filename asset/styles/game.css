@@ -34,3 +34,34 @@
 .incorrect {
     background-color: #e03849;
 }
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-txt {
+    text-align: center;
+}
+
+/* PROGRESS BAR */
+
+#prog-bar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #7171C6;
+    margin-top: 1.5rem;
+}
+
+#prog-bar-full {
+    background-color: #7171C6;
+    height: 3.4rem;
+    width: 0%;
+}

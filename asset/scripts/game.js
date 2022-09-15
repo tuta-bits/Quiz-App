@@ -3,6 +3,9 @@
 
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('option-text'));
+const progressText = document.getElementById('prog-txt');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('prog-bar-full');
 
 /* Setting variables */
 
@@ -63,6 +66,13 @@ if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
 }
 
     questionCounter++;
+
+    // UPDATING COUNTER
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+
+    // UPDATE PROGRESS BAR
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -91,6 +101,10 @@ choices.forEach(option => {
         const classToApply = 
         selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
+        if (classToApply == 'correct') {
+            incrementScore(CORRECT_BONUS);
+        }
+
         selectedOption.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
@@ -101,5 +115,11 @@ choices.forEach(option => {
         
     });
 });
+
+// iNCREASE SCORE FUNCTION
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+};
 
 startGame();
