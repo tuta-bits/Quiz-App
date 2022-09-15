@@ -31,5 +31,8 @@ Credits:
 	Icons:
 		Font Awesome (fontawesome.io)
 
+  Loader:
+    w3school (w3school.com)
+
 	
   
