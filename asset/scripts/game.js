@@ -60,9 +60,12 @@ startGame = () => {
 // NEW QUESTION FUNCTION
 getNewQuestion = () => {
 if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+
+    // SAVING SCORE TO LOCAL STORAGE
+    localStorage.setItem('mostRecentScore', score);
     
     //GO TO END PAGE
-    return window.location.assign('/end.html');
+    return window.location.assign('/finale.html');
 }
 
     questionCounter++;
