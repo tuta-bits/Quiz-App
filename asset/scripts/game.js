@@ -5,6 +5,8 @@ const choices = Array.from(document.getElementsByClassName('option-text'));
 const progressText = document.getElementById('prog-txt');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('prog-bar-full');
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 
 /* Setting variables */
 
@@ -24,7 +26,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
 }).then(loadedQuestions => {
     console.log(loadedQuestions);
 
-    // RETRIVING QUESTIONS FROM THE PUBLIC API BE DISPLAYED
+    // RETRIVING QUESTIONS FROM THE PUBLIC API TO BE DISPLAYED
     questions = loadedQuestions.results.map(loadedQuestion => {
         const apiQuestion = {
             question: loadedQuestion.question
@@ -37,7 +39,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
 
         answerOptions.forEach((option, index) => {
             apiQuestion['option' + (index+1)] = option;
-        })
+        });
 
         return apiQuestion;
 
@@ -60,6 +62,10 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+
+    // ADDING SPINNER EFFECT FOR BETTER USER EXPERIENCE
+    game.classList.remove('hidden');
+    loader.classList.add('hidden');
 };
 
 // NEW QUESTION FUNCTION
@@ -112,9 +118,10 @@ choices.forEach(option => {
         if (classToApply == 'correct') {
             incrementScore(CORRECT_BONUS);
         }
-
+       
         selectedOption.parentElement.classList.add(classToApply);
 
+        
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
             getNewQuestion();

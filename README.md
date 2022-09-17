@@ -25,14 +25,17 @@ This app will comprise of three `3` pages, *viz* : Home Page, Game Page and End 
 
 Credits:
 
-	Demo Images:
-		Unsplash (unsplash.com)
+	Quiz Questions:
+		Open Trivia DB (opentdb.com)
 
 	Icons:
-		Font Awesome (fontawesome.io)
+		Font Awesome (fontawesome.io) (https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_icons_google)
 
-	Loader:
-	     	w3school (w3school.com)
+	Spinner:
+	  w3school (https://www.w3schools.com/howto/howto_css_loader.asp)
+
+  Zoom Hover:
+    w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
 	
   
