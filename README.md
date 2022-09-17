@@ -4,10 +4,10 @@
 This is a wonderful display of `HTML`, `JS` and `CSS` :sparkles: manipulation at work <br>
 *which i'm so excited :blush:* to share with you today.
 
-## :blossom: Welcome to my Quiz page :blossom:
+## :tulip: Welcome to my Quiz App :tulip:
 
-This is a web-page that will show-case a random quiz with multi-choice answers and a testament of my journey with **`The Learning People`**<br>
-This app will comprise of three `4` pages, *viz* : Home Page, Game Page, End Page and High-Score Page.
+This is a web-based Quiz-Application that will show-case a random quiz with multi-choice answers and a testament of my journey with **`The Learning People`**<br>
+This app will comprise of four `4` pages, *viz* : Home Page, Game Page, End Page and High-Score Page.
 
 ### Overview
 
@@ -23,6 +23,10 @@ This app will comprise of three `4` pages, *viz* : Home Page, Game Page, End Pag
   * Input box for the player to put their name in and save their score
   * Once score is saved, the game will go back to the home page
   * Displaying options to play again or view the highscore board
+* High-Score Page
+  * Displays the list of players who've played and their scores
+  * Displays the list in descending order
+  * Displays only the top 5 highest scoring players
 
 :information_source: Some sources i used in the course of this project
 
@@ -37,8 +41,8 @@ Credits:
 	Spinner:
 	  w3school (https://www.w3schools.com/howto/howto_css_loader.asp)
 
-  Zoom Hover:
-    w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
+	Zoom Hover:
+	   w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
 	
-  
+ 
