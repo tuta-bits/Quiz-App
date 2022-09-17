@@ -133,3 +133,61 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
+audio {
+    margin-top: 17rem;
+}
+
+#play {
+    color: #7171C6;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 10rem;
+    border-top: 0.5px solid #7171C6;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+}
+    
+.contact-details {
+    font-size: 1rem;
+    
+}
+    
+.contact-details:hover {
+    transform: translateY(5px);
+    transition: transform 0.3s ease-out;
+}
+
+.bat {
+    font-size: 1.5rem;
+    padding: 0rem 0;
+    width: 15rem;
+    text-align: center;
+    text-decoration: none;
+    color: #7171C6;
+    background-color: #f3f6fa;
+}
+
+.last {
+    font-size: 1.3rem;
+    font-family: Lucida Handwriting;
+    margin-top: 3rem;
+    display: inline-flex;
+    padding: 1.5rem;
+}
+
+#first {
+    font-size: 1.3rem;
+    font-family: Lucida Handwriting;
+    margin-bottom: 2rem;
+}

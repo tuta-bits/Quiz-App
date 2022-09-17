@@ -5,14 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/asset/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home Page</title>
 </head>
 <body>
+    
     <div class="wrapper">
         <div id="home" class="flex-cent flex-col">
+            <i class="fa fa-music" style="font-size:36px" id="play"></i>
             <h1>Brain Teaser</h1>
             <a href="/game.html" class="btn">Play</a>
             <a href="/highscores.html" class="btn">High Scores</a>
+            <audio autoplay loop controls>
+                <source src="/asset/media/WellTemperedClavier.mp3" type="audio/mp3">
+            </audio>
+
+            <footer>
+                <p id="first">Contact Us:</p>
+                <div class="contact-links">
+                    <a
+                      href="https://www.linkedin.com/in/anthony-ube-a45b2092/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="bat contact-details"
+                      ><i class="fa fa-2x fa-linkedin" style="color: #7171C6;"></i> LinkedIn
+                    </a>
+                    <a
+                      id="profile-link"
+                      href="https://github.com/tuta-bits"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="bat contact-details"
+                      ><i class="fa fa-2x fa-github" style="color: #7171C6;"></i> GitHub</a>
+                    
+                    <a href="tel:555-555-5555" class="bat contact-details"
+                      ><i class="fa fa-2x fa-mobile-phone" style="color: #7171C6;"></i> Call me</a>
+                  </div>
+                  <div>
+                    <p class="last">
+                        Thanks for checking our work.
+                      </p>
+                      <p class="last">
+                        &copy; 2022  All Rights Reserved.
+                      </p>
+                  </div>
+            </footer>
         </div>
     </div>
 </body>
