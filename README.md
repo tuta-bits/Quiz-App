@@ -7,7 +7,7 @@ This is a wonderful display of `HTML`, `JS` and `CSS` :sparkles: manipulation at
 ## :blossom: Welcome to my Quiz page :blossom:
 
 This is a web-page that will show-case a random quiz with multi-choice answers and a testament of my journey with **`The Learning People`**<br>
-This app will comprise of three `3` pages, *viz* : Home Page, Game Page and End Page .
+This app will comprise of three `4` pages, *viz* : Home Page, Game Page, End Page and High-Score Page.
 
 ### Overview
 
@@ -19,7 +19,10 @@ This app will comprise of three `3` pages, *viz* : Home Page, Game Page and End 
   * Multi-choice answers
   * Select an answer and go to the next question
 * End Page
-  * Display high score
+  * Displays the score of the player
+  * Input box for the player to put their name in and save their score
+  * Once score is saved, the game will go back to the home page
+  * Displaying options to play again or view the highscore board
 
 :information_source: Some sources i used in the course of this project
 
