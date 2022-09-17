@@ -1,4 +1,3 @@
-//'use strict';
 /* Getting References */
 
 const question = document.getElementById('question');
@@ -16,38 +15,44 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 // ARRAYS OF QUESTIONS
-let questions = [
-    {
-        question: 'Inside which HTML element do we put JavaScript ?',
-        option1: '<script>',
-        option2: '<JavaScript>',
-        option3: '<html>',
-        option4: '<figcaption>',
-        answer: 1
-    },
-    {
-        question: 'What is the correct syntax for referring to this external script "ttt.js" ?',
-        option1: '<script href="ttt.js">',
-        option2: '<script name="ttt.js">',
-        option3: '<script src="ttt.js">',
-        option4: '<script file="ttt.js">',
-        answer: 3 
-    },
-    {
-        question: 'How do we write "Hello World" in an alert box ?',
-        option1: 'msgBox("Hello world");',
-        option2: 'alertBox("Hello world");',
-        option3: 'msg("Hello world");',
-        option4: 'alert("Hello world");',
-        answer: 4
-    }
-];
+let questions = [];
+
+// CREATING A PROMISE THAT WILL RETURN QUESTIONS FROM PUBLIC API
+fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple').then(res => {
+
+    return res.json();
+}).then(loadedQuestions => {
+    console.log(loadedQuestions);
+
+    // RETRIVING QUESTIONS FROM THE PUBLIC API BE DISPLAYED
+    questions = loadedQuestions.results.map(loadedQuestion => {
+        const apiQuestion = {
+            question: loadedQuestion.question
+        };
+
+        // SPREAD AND RANDOMISE THE CORRECT AND INCORRECT ANSWERS
+        const answerOptions = [... loadedQuestion.incorrect_answers];
+        apiQuestion.answer = Math.floor(Math.random() * 3) + 1;
+        answerOptions.splice(apiQuestion.answer -1, 0, loadedQuestion.correct_answer);
+
+        answerOptions.forEach((option, index) => {
+            apiQuestion['option' + (index+1)] = option;
+        })
+
+        return apiQuestion;
+
+    });
+
+    startGame();
+}).catch(err => {
+    console.error(err);
+});
 
 
 // CONSTANTS
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 // START GAME FUNCTION
 startGame = () => {
@@ -125,4 +130,3 @@ incrementScore = num => {
     scoreText.innerText = score;
 };
 
-startGame();
