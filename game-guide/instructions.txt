@@ -1,0 +1,36 @@
+───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
+───█▒▒░░░░░░░░░▒▒█───
+────█░░█░░░░░█░░█────
+─▄▄──█░░░▀█▀░░░█──▄▄─
+█░░█─▀▄░░░░░░░▄▀─█░░█
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
+█░░║║║╠─║─║─║║║║║╠─░░█
+█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
+
+                !!! HOW TO PLAY THE QUIZ GAME !!!
+
+Open the game
+Select play game
+Answer 10 multi-choice questions by selecting the right Answer
+As you go through the question your score will increase by 10 pts with every correct answer
+Once you've answered the last question, you'll get to the end page
+The end page will display your computed score with the option to save your score
+To save your score, you'll have to enter a name in the 'username' else the save button won't work
+If you're not happy with your score, you're welcomed to play again
+Once saved, the game will default back to the home page
+Here you can toggle between the higscore page and home page
+Or start new game.
+
+
+O°o. .o°O________________________________O°o. .o°O.
+.°o.O.o° ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯.°o.O.o°
+░░░░░╔══╦╗░░░░╔╗░░░░░░╔╗╔╗░░░░░░░░
+░░░░░╚╗╔╣╚╦═╦═╣║╔╗░░░░║║║╠═╦╦╗░░░░
+░░░░░░║║║║╠╝║║║╠╝║░░░░║╚╝║║║║║░░░░
+░░░░░░║║║║║║║║║╔╗╣░░░░╚╗╔╣║║║║░░░░
+░░░░░░╚╝╚╩╩═╩╩╩╝╚╝░░░░░╚╝╚═╩═╝░░░░
+.O°o. .o°O________________________________O°o. .o°O.
+.°o.O.o° ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯.°o.O.o°..
+
+¯\_( ͡° ͜ʖ ͡°)_/¯
