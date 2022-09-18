@@ -45,4 +45,4 @@ Credits:
 	   w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
 	
- 
+ [GUIDE - How To Play The Quiz Game](/game-guide/instructions.txt)
