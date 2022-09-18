@@ -28,7 +28,27 @@ This app will comprise of four `4` pages, *viz* : Home Page, Game Page, End Page
   * Displays the list in descending order
   * Displays only the top 5 highest scoring players
 
-:information_source: Some sources i used in the course of this project
+
+:information_desk_person: Click the link below for the game guide
+	
+ [GUIDE - How To Play The Quiz Game](/game-guide/instructions.txt)
+
+### Aspects Covered Within This Work
+	* Save achievements to Local Storage.
+	
+	* Establish a progress bar.
+	
+	* Make an icon of a spinning loader
+	
+	* Create HTML programmatically using JavaScript.
+	
+	* Access the Open Trivia DB API to retrieve trivia questions.
+	
+	* JavaScript & ES6: Local Storage, Fetch API, and Array Functions (splice, map, and sort) The Spread Operator, Const and Let, Template Literals, and Arrow Functions are examples of JavaScript features used within this work.
+	
+	* Flexbox, animations, and REM units in CSS
+
+### :information_source: Some sources i used in the course of this project
 
 Credits:
 
@@ -44,6 +64,3 @@ Credits:
 	Zoom Hover:
 	   w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
-:information_desk_person: Click the link below for the game guide
-	
- [GUIDE - How To Play The Quiz Game](/game-guide/instructions.txt)
