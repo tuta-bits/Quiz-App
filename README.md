@@ -44,5 +44,6 @@ Credits:
 	Zoom Hover:
 	   w3school (https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
+:information_desk_person: Click the link below for the game guide
 	
  [GUIDE - How To Play The Quiz Game](/game-guide/instructions.txt)
