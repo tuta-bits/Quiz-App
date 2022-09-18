@@ -195,16 +195,11 @@ footer {
 @media screen and (max-width: 640px) {
     h2 {
         font-size: 2.8rem;
-        margin-bottom: 3rem;
     }
 
     footer {
         margin-top: 5rem;
         padding: 1rem;
-    }
-
-    body {
-        background-color: #f3f6fa;
     }
 
     .wrapper {
